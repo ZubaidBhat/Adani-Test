@@ -5,15 +5,16 @@ using namespace std;
 
 int main()
 {
-    int numberOfRows, numberOfColumns;
+    int numberOfRows;
+    int numberOfColumns;
 
-    cin >> numberOfRows >> numberOfColumns;
+    cin >> numberOfColumns;
 
     int arr[numberOfRows][numberOfColumns];
 
     for (int i = 0; i < numberOfRows; i++)
     {
-        for (int j = 0; j < numberOfColumns; i++)
+        for (int j = 0; j < numberOfColumns; j++)
         {
 
             arr[i][j] = rand() % 100;
@@ -22,7 +23,7 @@ int main()
 
     for (int i = 0; i < numberOfRows; i++)
     {
-        for (int j = 0; j < numberOfColumns; i++)
+        for (int j = 0; j < numberOfColumns; j++)
         {
             cout << arr[i][j];
         }
